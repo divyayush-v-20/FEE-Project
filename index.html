@@ -7,142 +7,197 @@
     <title>Marketing Research Survey</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-    <center>
-        <div class="heading"><h1>Marketing Research Survey</h1></div>
-        <br>
-    <div>
-        <br><br>
-        <fieldset>
-            <label for="name">Name :</label><br><br>
-            <input type="text" placeholder="Your answer" >
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="email">Email-ID :</label><br><br>
-            <input type="email" placeholder="Your answer" >
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="age">Age :</label><br><br>
-            <input type="number" placeholder="Your answer" >
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="Gender">Gender :</label> <br><br>
-            <div class="gender">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </div>
-        </fieldset>
-        <br>
-       
-
-        <fieldset>
-            <label for="gen">Which of the following best describes your current role?</label><br> <br>
-            <select name="choose" id="role" aria-placeholder="Select">
-                <option value="default">-/-</option>
-                <option value="Student">Student</option>
-                <option value="Part-Time">Intern</option>
-                <option value="Full-Time">Professional</option>
-            </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="">What are your Interests?</label>
-            <br> <br>
-           IT <input type="checkbox" id="interests"><br>
-           Travel <input type="checkbox" id="interests"><br>
-            Sports<input type="checkbox" id="interests"><br>
-            Camping<input type="checkbox" id="interests"><br>
-           Real Estate <input type="checkbox" id="interests"><br>
-           Pets and Animals <input type="checkbox" id="interests"> <br>
-            Others<input type="checkbox" id="interests">
-    <br> <br>
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="">What is your Annual Income?</label> <br><br>
-            <select name="choose" id="role" aria-placeholder="Select">
-                <option value="default">-/-</option>
-                <option value="number">5000$</option>
-                <option value="number">5000$-15000$</option>
-                <option value="number">15000$-25000$</option>
-                <option value="number">25000$-45000$</option>
-                <option value="number">45000$-60000$</option>
-                <option value="number">>60000$</option>
-                </select>
-        </fieldset>
-        <br>
-        <fieldset style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-
-            <label for="">What type of products do you usually purchase?</label>
-            <select name="choose" id="role" aria-placeholder="Select">
-                <option value="default">-/-</option>
-                <option value="text">House Appliances</option>
-                <option value="text">IT Hardware</option>
-                <option value="text">Clothing</option>
-                <option value="text">Books</option>
-                <option value="text">Purchelian Objects</option>
-                <option value="text">Others</option>
-                </select>
-        </fieldset>
-        <br>
-        <fieldset style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-            <label for="">How do you keep track of new products?</label> <br><br>
-            TV commercials<input type="checkbox" id="track"> <br>
-            Radio<input type="checkbox" id="track"><br>
-            Online<input type="checkbox" id="track"><br>
-            Brochures<input type="checkbox" id="track"><br>
-            Newspaper<input type="checkbox" id="track"><br>
-            Others<input type="checkbox" id="track">
-            <br> <br>
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="">How many products have you purchased from our Platform till now?</label><br><br>
-
-            <select name="choose" id="role" aria-placeholder="Select">
-                <option value="default">-/-</option>
-                <option value="number">1</option>
-                <option value="number">2</option>
-                <option value="number">3</option>
-                <option value="number">4</option>
-                <option value="number">5</option>
-                <option value="number">More than 5</option>
-                </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="">What is the latest product you purchased from our Platform?</label><br> <br>
-            <textarea id="product name" name="product name " rows="5" cols="60" > write here</textarea>
-        </fieldset>
-        <br>
-        <fieldset>
-            <label for="">What type of new products would like to hear  in the future?</label> <br><br>
-            <textarea id="name" name="name " rows="5" cols="60" > tell here...</textarea>
-        </fieldset>
-        <br>
-        <fieldset style="text-align:left">
-            <label for="feedback">How would you rate our platform on a scale of 1-10 :</label><br><br>
-            <select name="choose" id="role" aria-placeholder="Select">
-            <option value="default">-/-</option>
-            <option value="number">0</option>
-            <option value="number">1-3</option>
-            <option value="number">4-6</option>
-            <option value="number">7-9</option>
-            <option value="number">10</option>
-            </select>
-        </fieldset><br><br>
+    <div class="navbar">
+        <ul>
+            <li><a href=""> <i class = "fa fa-home"></i> Home</a></li>
+            <li><a href="https://github.com/divyayush-v-20/FEE-Project" target = "_github"> <i class = "fa fa-github"></i> Github</a></li>
+            <li><a href="https://github.com/divyayush-v-20/FEE-Project/settings/access" target = "_team"> <i class = "fa fa-users"></i> Team Members</a></li>
+            <li><a href=""> <i class = "fa fa-pencil-square-o"></i> Project Report </a></li>
+        </ul>
     </div>
-    <br><br><br>
-    <a href="thankyou.html"><button style="color:white">SUBMIT</button></a>
-    <br>
-    <br>
+    <center>
+<div class="form">
+    <span class="content-name">
+        <header>
+        
+        </header>
+        <center>
+            <br>
+            <div class="heading"><h1>Marketing Research Survey</h1></div>
+        <div>
+            <hr>
+            <br><br>
+            <div class="info">
+                <fieldset>
+                    <label for="name" class="form">Name :</label><br><br>
+                    <input type="text" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px; ">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="email" class="form">Email-ID :</label><br><br>
+                    <input type="email" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px;" >
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="age" class="form">Age :</label><br><br>
+                    <input type="number" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px;">
+                </fieldset>
+            </div>
+            <br>
+            <fieldset>
+                <label for="Gender" >Gender :</label> <br><br>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class = "con">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class = "con">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other" class = "con">Other</label>
+                </div>
+            </fieldset>
+            <br>
+           
+    
+            <fieldset>
+                <label for="gen">Which of the following best describes your current role?</label><br> <br>
+            <select name="choose" id="role" aria-placeholder="Select" class = "dr">
+                <option value="default" class="menu">-/-</option>
+                <option value="Student" class="menu">Student</option>
+                <option value="Part-Time" class="menu">Intern</option>
+                <option value="Full-Time" class="menu">Professional</option>
+            </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+                <label for="">What are your Interests?</label>
+            <br> <br>
+            <p>
+                <input type="checkbox" id="interests" >
+           <label for="" class="ch">IT</label>
+            </p>
+           <p>
+            <input type="checkbox" id="interests" >
+           <label for="" class="ch">Travel</label>
+           </p>
+           <p>
+            <input type="checkbox" id="interests" >
+            <label for="" class="ch">Sports</label>
+           </p>
+            <p>
+                <input type="checkbox" id="interests" >
+            <label for="" class="ch">Camping</label>
+            </p>
+            <p>
+                <input type="checkbox" id="interests" >
+           <label for="" class="ch">Real Estate</label>
+            </p>
+           <p>
+            <input type="checkbox" id="interests" >
+           <label for="" class="ch">Pets and Animals</label>
+           </p>
+           <p>
+            <input type="checkbox" id="interests" >
+            <label for="" class="ch">Others</label>
+           </p>
+            
+        
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="">What is your Annual Income?</label> <br><br>
+                <select name="choose" id="role" aria-placeholder="Select" class="dr">
+                    <option value="default" class="menu">-/-</option>
+                    <option value="number" class="menu">5000$</option>
+                    <option value="number" class="menu">5000$-15000$</option>
+                    <option value="number" class="menu">15000$-25000$</option>
+                    <option value="number" class="menu">25000$-45000$</option>
+                    <option value="number" class="menu">45000$-60000$</option>
+                    <option value="number" class="menu">>60000$</option>
+                    </select>
+            </fieldset>
+            <br>
+            <fieldset style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+    
+                <label for="">What type of products do you usually purchase? </label> <br> <br>
+                <select name="choose" id="role" aria-placeholder="Select" class="dr">
+                    <option value="default" class="menu">-/-</option>
+                    <option value="text" class="menu">House Appliances</option>
+                    <option value="text" class="menu">IT Hardware</option>
+                    <option value="text" class="menu">Clothing</option>
+                    <option value="text" class="menu">Books</option>
+                    <option value="text" class="menu">Purchelian Objects</option>
+                    <option value="text" class="menu">Others</option>
+                    </select>
+            </fieldset>
+            <br>
+            <fieldset style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                <label for="">How do you keep track of new products?</label> <br><br>
+              <p>
+                <input type="checkbox" id="track"> 
+                <label for="" class = "ch"> TV Commercials</label> 
+              </p>
+                <p>
+                    <input type="checkbox" id="track">
+                <label for="" class="ch">Radio</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="track">
+                <label for="" class="ch">Online</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="track">
+                <label for="" class="ch">Brochures</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="track">
+                <label for="" class="ch">Newspaper</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="track">
+                <label for="" class="ch">Others</label>
+                </p>
+                <br> <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="age" class="form">How many products have you purchased from our Platform till now?</label><br><br>
+                    <input type="number" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px;">
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="">What is the latest product you purchased from our Platform?</label><br> <br>
+                <textarea id="product name" name="product name " rows="5" cols="60" placeholder="write here.."></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="">What type of new products would like to hear  in the future?</label> <br><br>
+                <textarea id="name" name="name " rows="5" cols="60" placeholder="write here.."></textarea>
+            </fieldset>
+            <br>
+            <fieldset style="text-align:left">
+                <label for="feedback">How would you rate our platform :</label><br><br>
+                <div class="feedback">
+                        <span class="fa fa-star fa-2x checked"></span>
+                        <span class="fa fa-star fa-2x checked"></span>
+                        <span class="fa fa-star fa-2x checked"></span>
+                        <span class="fa fa-star fa-2x"></span>
+                        <span class="fa fa-star fa-2x"></span>                   
+                </div>
+            </fieldset><br><br>
+        </div>
+        
+    </center>
+    </span>
+  </label>
+</div>
+<br><br><br>
+        <a href="thankyou.html"><button style="color:white">SUBMIT</button></a>
+        <br>
+        <br>
 </center>
 </body>
 </html>
