@@ -352,3 +352,9 @@ button:hover{
     }
      
   }
+
+ .stats:hover{
+    background-color:#00000000;
+    cursor:auto;
+    color:black;
+  }
