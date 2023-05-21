@@ -4,52 +4,71 @@ ul{
     padding:0;
     width:200px;
 }
-li a{
-    color:white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ a{
+    color:black;
+    font-family:Poppins;
     display:block;
     padding:8px 16px;
     text-decoration: none;
     height:25px;
 }
-li a:hover{
-    background-color:#1f293a;
+ a:hover{
+    background-color:#63a4ff;
     color:white;
+    border-radius:10px;
 }
-html{
-    background-image:url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-size: 100% 100%;
+.categories:hover{
+    background-color: #00000000;
+    color:black;
+    cursor:auto;
 }
 .navbar{
     /* background-color:#00000000; */
     /* background-color: #fff;
     background-color: rgba(255,255,255,0.5); */
-    background-color: #002244;
+     background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /* background-color: #002244; */
     width:200px;
-    
-    position: fixed;
+    text-align: left;
     float:right;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
 }
-.dropdown{
+.navbar2{
+    /* background-color:#00000000; */
+    /* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
+     background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /* background-color: #002244; */
     width:200px;
-}
-.drop{
-    width:200px;
-    background-color:#002244;
-    text-align:left;
-    color:white;
+    text-align: left;
+    float:right;
+    position:fixed;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
 }
 html{
-    background-color:#f1f1f1;
+    /* background-color: #6495ED; */
+    /* background-image:url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"); */
+    /* background-image: url("data:image/jpeg;base64,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"); */
+    /* background-image:url("https://img.freepik.com/free-vector/modern-check-list-illustration_79603-146.jpg?size=626&ext=jpg&ga=GA1.2.685053610.1683956612&semt=ais"); */
+    /* background-image:url("https://img.freepik.com/free-vector/hand-drawn-people-checking-giant-check-list-background_23-2148085672.jpg?size=626&ext=jpg&ga=GA1.2.685053610.1683956612&semt=ais"); */
+    /* background-image: url("https://img.freepik.com/free-vector/team-checklist-concept-illustration_114360-13202.jpg?size=626&ext=jpg&ga=GA1.2.685053610.1683956612&semt=sph");
+    background-repeat:no-repeat;*/
+    background-attachment:fixed;
+   /* background-position-x: right;
+    background-size: 30% 90%; */
+    /*gradient*/
+    /* background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); */
+/* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
 }
-h1{
-    color:#1f293a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    padding-bottom:0px;
-}
+
 h3{
     color:black;
     font-size:40px;
@@ -62,6 +81,7 @@ div{
     width:750px;
     border-radius:10px;
     border-color:#058da5;
+    cursor:auto;
 }
 fieldset{
     color:black;
@@ -69,16 +89,20 @@ fieldset{
     text-align:left;
     /* background-color: #2b2a29; */
     /* background-color:#0039a6; */
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
+    /* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
+     background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     border-radius:10px;
-    border:4px solid #002244;
+    /* border:4px solid #002244; */
+    border:none;
     width:500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 label{
     font-size:25px;
     color:black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Poppins;
 }
 input{
     width:350px;
@@ -88,11 +112,11 @@ input{
     border-color:#00000000;
     border-bottom-color: black;
 }
+
 input[type=text]:focus {
     border: 3px solid #002244;
     outline:none;
-    cursor:white;
-    
+    cursor:white;    
   }
   input[type=email]:focus {
     border: 3px solid #002244;
@@ -107,32 +131,7 @@ select{
     background-color:#black;
     border-radius:5px;
 }
-button{
-    vertical-align: middle;
-    border-radius: 5px;
-    border-color:#00000000;
-    padding: 15px 32px;
-    background-color:#002244;
-    font-size:15px;
-    font-weight: 200;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-button{
-    height:50px;
-    width:250px;
-}
-button {
-    transition-duration: 0.4s;
-    cursor:pointer;
-  }
-  
-button:hover {
-    background-color: #1F305E; 
-    color: white;
-  }
-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+
 .gender{
     background-color:#00000000;
     width:500px;
@@ -162,11 +161,6 @@ textarea{
     size-adjust: none;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}
-.heading{
-    background-color:#00000000;
-    border-radius:10px;
-    width:fit-content
 }
 
 
@@ -204,6 +198,11 @@ input[type="radio"]{
     border-radius:50%;
     margin-right:20px;
 }
+input[type = "radio"]:hover + .con{
+    color:white;
+    background: #63a4ff;
+    border-color:#00000000;
+}
 input[type="radio"]:checked + .con{
     background-color:#002244;
     color:white;
@@ -224,6 +223,15 @@ input[type="checkbox"]{
     width:200px;
     align-items: center;
 }
+input[type = "checkbox"]:hover{
+    animation-duration: 0.4s;
+    
+}
+input[type = "checkbox"]:hover + .ch{
+    background: #63a4ff;
+    border-color:#00000000;
+    color:white;
+}
 input[type="checkbox"]:checked + .ch{
     background-color:#002244;
     color:white;
@@ -235,28 +243,8 @@ input[type="checkbox"]:checked + .ch{
     
     
 }
-.feedback{
-    width:500px;
-    background-color:#00000000;
-}
-span{
-    cursor:pointer;
-    color:#555
-    
-}
-span::after{
-    color:#6643b5
-}
-.checked{
-    color:#FFD700;
-}
-.dr{
-    width:200px;
-    height:30px;
-    display:block;
-    outline: 2px solid #002244;
-    cursor: pointer;
-}
+
+
 .menu{
     display:block;
     background-color:#5072A7;
@@ -264,49 +252,63 @@ span::after{
     height:50px;
 }
 
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    width:200px;
+    ul li ul.dropdown li{
+        display:block;
+    }
+    ul li ul.dropdown {
+        display:none;
+    }
+    ul li:hover ul.dropdown{
+        display:block;
+    }
+.heading{
+   
 }
- a{
-    color:black;
+.gradient-heading{
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    font-size:37px;
+    text-transform:uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family:Poppins;
-    display:block;
-    padding:8px 16px;
-    text-decoration: none;
-    height:25px;
-}
- a:hover{
-    background-color:#1f293a;
-    color:white;
-    border-radius:10px;
-}
-.navbar{
-    /* background-color:#00000000; */
-    /* background-color: #fff;
-    background-color: rgba(255,255,255,0.5); */
-     background-color: #63a4ff;
-background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-    /* background-color: #002244; */
-    width:200px;
-    text-align: left;
-    float:right;
     
 }
-.navbar2{
-    /* background-color:#00000000; */
-    /* background-color: #fff;
-    background-color: rgba(255,255,255,0.5); */
-     background-color: #63a4ff;
-background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-    /* background-color: #002244; */
-    width:200px;
-    text-align: left;
-    float:right;
-    position:fixed;
+h1{
+    font-weight:900;
+}
+.rating-box{
     
+    width:500px;
+    background-color:#00000000;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+
+/* .button{
+    
+    width:220px;
+}
+.button:hover{
+    height:220px;
+    background-color:#00000000;
+}
+button{
+    width:220px;
+    background-color:#00000000;
+    border:none;
+    font-family:Poppins;
+}
+.button:hover */
+.submit{
+    width:220px;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    color:#002244;
+    font-size:20px;
+    border-radius:5px;
 }
 .star{
     width:500px;
