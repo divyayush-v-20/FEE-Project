@@ -358,3 +358,6 @@ button:hover{
     cursor:auto;
     color:black;
   }
+
+.navbar{
+    display:none;}
