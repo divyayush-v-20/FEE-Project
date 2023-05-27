@@ -13,7 +13,7 @@ ul{
     height:25px;
 }
  a:hover{
-    background-color:#63a4ff;
+    background-color:#555;
     color:white;
     border-radius:10px;
 }
@@ -23,17 +23,25 @@ ul{
     cursor:auto;
 }
 .navbar{
+    /* background-color:#00000000; */
+    /* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
      background-color: #63a4ff;
 background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /* background-color: #002244; */
     width:200px;
     text-align: left;
     float:right;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
+    top:0;
 }
 .navbar2{
+    /* background-color:#00000000; */
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
      background-color: #63a4ff;
 background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    /* background-color: #002244; */
     width:200px;
     text-align: left;
     float:right;
@@ -43,10 +51,17 @@ background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 }
 html{
    
-    background-attachment:fixed;
-  
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-
+    
+   /* /* background-position-x: right;
+    background-size: 30% 90%; */
+    /*gradient*/
+    /* background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); */
+/* background-color: #fff;*/
+    background-color: rgba(255,255,255,0.5); 
+   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    /* background-image: url("pictures/intro2.jpg"); */
+    /* background:fixed; */
 }
 
 h3{
@@ -67,11 +82,16 @@ fieldset{
     color:black;
     font-size:20px;
     text-align:left;
-   
+    /* background-color: #2b2a29; */
+    /* background-color:#0039a6; */
+    /* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
      background-color: #63a4ff;
 background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+/* background-color: #fff;
+    background-color: rgba(255,255,255,0.5); */
     border-radius:10px;
-   
+    /* border:4px solid #002244; */
     border:none;
     width:500px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -91,6 +111,7 @@ input{
 }
 
 input[type=text]:focus {
+     
     border: 3px solid #002244;
     outline:none;
     cursor:white;    
@@ -264,7 +285,21 @@ h1{
 
 
 
-
+/* .button{
+    
+    width:220px;
+}
+.button:hover{
+    height:220px;
+    background-color:#00000000;
+}
+button{
+    width:220px;
+    background-color:#00000000;
+    border:none;
+    font-family:Poppins;
+}
+.button:hover */
 .submit{
     width:220px;
     background-color: #63a4ff;
@@ -281,7 +316,10 @@ h1{
     background-color:orange;
     cursor:auto;
 }
-
+/* .star a .fa fa-star{
+    background-color:orange;
+    
+} */
 .button a:hover{
     background-color:#00000000;
 }
@@ -310,7 +348,7 @@ button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
+/* stars */
 
  .stars {
     margin-top: 20px;
@@ -335,25 +373,44 @@ button:hover{
   @media screen and (max-width:700px){
     .navbar2{
         width:70px;
-        font-size:8px;
+        font-size:5px;
     }
     a:hover{
         width:40px;
     }
+    
     .navbar{
         display:none;
     }
     .heading{
         font-size:5px;
     }
+    .gradient-heading{
+        font-size:25px;
+    }
     fieldset .stars{
         padding-left:200px;
     }
-     
-  }
-
- .stats:hover{
+   fieldset{
+    width:50%;
+   }
+   .con{
+    width:20%;
+    
+   }
+   .gender{
+    width:50%;
+   }
+   .ch{
+    width:20%;
+   }
+   .stars{
+    text-align:center;
+   }
+}
+  .stats:hover{
     background-color:#00000000;
     cursor:auto;
     color:black;
-  }
+  
+}
