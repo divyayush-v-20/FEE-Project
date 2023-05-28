@@ -155,21 +155,21 @@
             
             <br>
             <div class="info">
-                <fieldset>
-                    <label for="name" class="form">Name :</label><br><br>
-                    <input type="text" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px; ">
-               
-                <br><br>
-                
-                    <label for="email" class="form">Email-ID :</label><br><br>
-                    <input type="email" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px;" >
-                
-                <br><br>
-                
-                    <label for="age" class="form">Age :</label><br><br>
-                    <input type="number" placeholder="Your answer" class="textbox" style="height:30px; width: 200px;border-radius:5px;">
-                
-            </div>
+                    <fieldset>
+                        <label for="name" class="form">Name :</label><br><br>
+                        <input onkeydown="return /[a-z]/i.test(event.key)" class="textbox" placeholder="Your answer" REQUIRED style="height:30px; width: 200px;border-radius:5px;">
+                   
+                    <br><br>
+                    
+                        <label for="email" class="form">Email-ID :</label><br><br>
+                        <input type="email" placeholder="Your answer" required class="textbox" style="height:30px; width: 200px;border-radius:5px;" >
+                    
+                    <br><br>
+                    
+                        <label for="age" class="form">Age :</label><br><br>
+                        <input type="number" placeholder="Your answer" required class="textbox" style="height:30px; width: 200px;border-radius:5px;">
+                    
+                </div>
             <br>
             <fieldset>
                 <label for="Gender" >Gender :</label> <br><br>
